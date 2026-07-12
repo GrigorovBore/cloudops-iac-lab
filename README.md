@@ -60,40 +60,6 @@ AWS Account
 
 ---
 
-## Architecture Diagram:
-```text
-
-                         AWS Account
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│  Infrastructure Layer (Networking)                           │
-│  ┌────────────────────────────────────────────────────────┐  │
-│  │ VPC                                                    │  │
-│  │                                                        │  │
-│  │  ┌──────────────┐      ┌──────────────┐                │  │
-│  │  │ Public       │      │ Private      │                │  │
-│  │  │ Subnet       │      │ Subnet       │                │  │
-│  │  └──────────────┘      └──────────────┘                │  │
-│  │          ▲                    ▲                        │  │
-│  │          │                    │                        │  │
-│  │  Internet Gateway      Security Groups                │  │
-│  │                                                        │  │
-│  │        Route Tables control traffic flow              │  │
-│  └────────────────────────────────────────────────────────┘  │
-│                                                              │
-│                  │                                           │
-│                  │ Monitors                                  │
-│                  ▼                                           │
-│                                                              │
-│          CloudWatch (Monitoring Layer)                       │
-│      • Log Groups                                            │
-│      • Dashboard                                             │
-│                                                              │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
----
-
 ## Cost Management
 
 This project is designed as a low-cost learning environment.
