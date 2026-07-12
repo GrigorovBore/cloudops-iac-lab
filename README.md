@@ -42,6 +42,7 @@ This project provisions the foundational AWS networking infrastructure that futu
 
 The project provisions the following AWS infrastructure:
 
+```text
 AWS Account
 │
 ├── VPC
@@ -52,6 +53,7 @@ AWS Account
 ├── Route Table Association
 ├── CloudWatch Log Group
 └── CloudWatch Dashboard
+```
 
 - Security Groups: Security Groups are intentionally omitted because this project does not deploy compute resources. They would normally be attached to EC2 instances, load balancers, or databases.
 - CloudWatch: In this project are used two fundamental CloudWatch resource types - CloudWatch Log Group and CloudWatch Dashboard. CloudWatch Alarm is not included since the VPC has no running workload and does not yet have a meaningful application metric to alarm on.
