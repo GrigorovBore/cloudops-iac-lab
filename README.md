@@ -6,7 +6,7 @@ CloudOps IaC Lab is a Terraform project that provisions a basic AWS networking e
 
 To keep the scope manageable, this project provisions only networking and basic CloudWatch resources. Compute resources will be added in a future iteration.
 
-This project serves as the networking foundation for a future iteration that will deploy an Amazon EC2 application behind an Application Load Balancer (ALB).
+The next step is to deploy an EC2 application behind an Application Load Balancer using this networking setup.
 
 ---
 
