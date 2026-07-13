@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-CloudOps IaC Lab is a beginner-friendly Infrastructure as Code project that demonstrates how AWS infrastructure can be provisioned and managed using Terraform.
+CloudOps IaC Lab is a Terraform project that provisions a basic AWS networking environment. It was created as a hands-on learning project to practice Infrastructure as Code and core AWS networking concepts.
 
-The goal of this project is to build a foundational understanding of AWS cloud networking and Infrastructure as Code by provisioning AWS resources with Terraform.
+I built this project to practice AWS networking and Infrastructure as Code by provisioning resources with Terraform.
 
-This project focuses on networking and observability and intentionally excludes compute resources to keep the architecture simple and aligned with AWS Cloud Practitioner-level concepts.
+To keep the scope manageable, this project provisions only networking and basic CloudWatch resources. Compute resources will be added in a future iteration.
 
 Project 1: CloudOps IaC Lab (Networking + Observability).
 Potential upgrade to Project 2: Build on this foundation by deploying an application using Amazon EC2 behind an Application Load Balancer (ALB).
@@ -15,16 +15,15 @@ Potential upgrade to Project 2: Build on this foundation by deploying an applica
 
 ## Project Scenario
 
-A small business wants to prepare a secure AWS environment where future applications can be deployed.
+This project creates a reusable AWS networking foundation that can support future application deployments.
 
-The business needs:
+- Create a custom VPC
+- Provision public and private subnets
+- Configure internet connectivity
+- Create CloudWatch resources
+- Manage everything with Terraform
 
-- A private cloud network
-- Controlled access to resources
-- Basic monitoring capabilities
-- Infrastructure that can be recreated consistently
-
-This project provisions the foundational AWS networking infrastructure that future applications can be deployed into.
+This project provisions the foundational AWS networking infrastructure for deploying future applications.
 
 ---
 
@@ -55,8 +54,8 @@ AWS Account
 └── CloudWatch Dashboard
 ```
 
-- Security Groups: Security Groups are intentionally omitted because this project does not deploy compute resources. They would normally be attached to EC2 instances, load balancers, or databases.
-- CloudWatch: In this project are used two fundamental CloudWatch resource types - CloudWatch Log Group and CloudWatch Dashboard. CloudWatch Alarm is not included since the VPC has no running workload and does not yet have a meaningful application metric to alarm on.
+- Security Groups are not included because this project does not deploy compute resources. They would normally be attached to EC2 instances, load balancers, or databases.
+- CloudWatch: This project uses two fundamental CloudWatch resource types: - CloudWatch Log Group and CloudWatch Dashboard. CloudWatch Alarm is not included since the VPC has no running workload and does not yet have a meaningful application metric to alarm on.
 
 ---
 
