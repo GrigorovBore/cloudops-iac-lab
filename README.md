@@ -28,7 +28,6 @@ This project creates a reusable AWS networking foundation that can support futur
 - Terraform
 - AWS CLI
 - GitHub
-- GitHub Actions
 
 ---
 
